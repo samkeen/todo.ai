@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="mvp.css">
+    <link rel="stylesheet" href="styles.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Todo App</title>
+    <script type="module" src="main.js" defer></script>
+  </head>
+
+  <body>
+  <div class="container-fluid">
+      <h1>Todo app</h1>
+
+      <form id="todo-form">
+        <label for="headline-input">headline:</label><input id="headline-input" placeholder="Clean the garage..." />
+        <label for="desc-input">description:</label><textarea id="desc-input" placeholder="The garage is a mess..."></textarea>
+        <button type="submit">Save</button>
+      </form>
+
+      <p id="todo-msg"></p>
+    </div>
+  </body>
+</html>

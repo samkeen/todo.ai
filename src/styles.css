@@ -1,0 +1,14 @@
+body {
+  padding: 20px;
+}
+/* add margin on the right of checkbox */
+input[type="checkbox"] {
+  margin-right: 10px;
+}
+/* Make form button appear on new line, aligned to the right */
+form button {
+  display: block;
+  margin-top: 10px;
+  margin-left: auto;
+  margin-right: 0;
+}
