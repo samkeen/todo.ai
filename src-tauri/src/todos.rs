@@ -38,6 +38,19 @@ impl TodoCollection {
         todo
     }
 
+    pub fn update(&mut self, todo_id: &str, headline: &str, description: &str, is_done: bool) -> Todo {
+        let todo = Todo {
+            id: todo_id.to_string(),
+            headline: headline.to_string(),
+            description: description.to_string(),
+            is_done: is_done,
+        };
+        self.todos.retain(|todo| todo.id != todo_id);
+        self.todos.push(todo.clone());
+        self.persist();
+        todo
+    }
+
     pub fn get(&self) -> Vec<Todo>{
         self.todos.clone()
     }
